@@ -63,6 +63,11 @@ export class Map extends KeyedCollection {
     return this.__toString('Map {', '}');
   }
 
+  log(msg) {
+    console.log(msg, this);
+    return this
+  }
+
   // @pragma Access
 
   get(k, notSetValue) {
